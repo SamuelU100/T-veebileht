@@ -1,7 +1,6 @@
 * {
     margin: 0;
     padding: 0;
-    font-family: 'Sansita Swashed', cursive;
 }
 
 .header {
@@ -9,19 +8,22 @@
     font-size: 4rem;
     background-color: rgb(26, 35, 85);
     color: rgb(18, 236, 127);
-    width: 75%;
+    width: 96%;
     margin: 0 auto;
     clip-path: polygon(0 0, 100% 0, 100% 73%, 0 100%);
+    font-family: 'Sansita Swashed', cursive;
   
 }
 
 main {
-    width: 75%;
+    width: 96%;
     margin: 0 auto;
-    background-color: rgba(165, 42, 42, 0.2);
     padding: 8rem 3rem;
     margin-top: -5rem;
-    
+    background-image: url(../img/pexels-jeshootscom-442576.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
 }
 
 img {
@@ -39,7 +41,7 @@ img {
 .footer {
    
     display: block;
-    width: 75%;
+    width: 96%;
     margin: 0 auto;
     background-color:rgb(26, 35, 85);
     text-align: center;
@@ -59,9 +61,10 @@ img {
 }
 
 .kiri {
+     font-family: 'Sansita Swashed', cursive;
     display: block;
     font-size: 5rem;
-    letter-spacing: 1.5rem;
+    letter-spacing: 0.7rem;
     animation-name: moveInRight;
     animation-duration: 3s;
     animation-timing-function: ease-out;
@@ -81,31 +84,6 @@ img {
             transform: translateX(0);
         }
         
-}
-
-.btn-div {
-    text-align: center;
-}
-
-.btn {
-  
-  
-  color: rgb(8, 3, 3);
-  text-decoration: none;
-  border: 2px solid rgb(15, 9, 9);
-  padding: 1rem;
-  margin: 2rem;
-  opacity: 0;
-  animation-name: btn;
-  animation-duration: 2s;
-  animation-fill-mode: forwards;
-  transition-property: transform;
-  transition-duration: 2s; 
-  
-}
-
-.btn:hover {
-  transform: rotateY(180deg);
 }
 
 .sm {
@@ -130,3 +108,38 @@ img {
     border-radius: 50%;
 }
 
+.btn-div {
+    text-align: center;
+    position: relative;
+}
+
+.btn {
+  
+  display: inline-block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  height: 10;
+  color: rgb(8, 3, 3);
+  text-decoration: none;
+  border: 2.5px solid rgb(15, 9, 9);
+  padding: 1rem;
+  margin: 2rem;
+  opacity: 0;
+  animation-name: btn;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+  transition-property: transform;
+  transition-duration: 2s; 
+  
+}
+
+.btn:hover {
+  transform: rotateY(180deg);
+}
+
+
+@keyframes btn {
+  0% {opacity: 0;}
+  100% {opacity: 1;}
+}
